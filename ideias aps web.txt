@@ -1,0 +1,17 @@
+*fazer a página para calcular o imc
+* marcador de botão pra saber em que página você está.
+* Melhoria de botão(quando passa o mouse por cima)
+* Deixar o formulário funcional
+* conseguir logar na conta
+* link para o instagram da "empresa" no "SOBRE"
+* um vídeo se der tempo no "SOBRE"
+* talvez alguns vídeos de exercícios?
+
+
+vídeo ensinando a calcular imc html https://www.youtube.com/watch?v=UBYqkpsafyI
+
+vídeo ensinando a fazer formulario responsivo https://www.youtube.com/watch?v=zWw0npNDkVM
+
+vídeo ensinando a fazer um menu responsivo https://www.youtube.com/watch?v=P9cSVCGj0I0
+
+site para colocar figuras https://undraw.co/illustrations
