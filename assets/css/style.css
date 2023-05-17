@@ -22,7 +22,7 @@ header {
 }
 
 .logo h1 {
-    color: wheat;
+    color: #def0f5;
 }
 
 .nav-list {
@@ -43,7 +43,7 @@ header {
 .nav-link {
     text-decoration: none;
     font-size: 1.15rem;
-    color: wheat;
+    color: #def0f5;
     font-weight: 400;
 }
 
@@ -51,12 +51,12 @@ header {
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
-    background-color: wheat;
+    background-color: #def0f5;
 }
 
 .login-button button a {
     text-decoration: none;
-    color: 483d8b;
+    color: #483d8b;
     font-weight: 500;
     font-size: 1.1rem;
 }
@@ -109,7 +109,23 @@ header {
     }
 }
 
-body {
+.input-field input::-webkit-outer-spin-button,
+.input-field input::-webkit-outer-spin-button{
+    appearance: none;
+}
 
-    background-color: wheat;
+.hidden {
+    display: none;
+}
+
+body {
+    text-align: center;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: #def0f5;
+}
+
+form {
+    display: inline;
 }
