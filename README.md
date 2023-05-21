@@ -1,7 +1,11 @@
 ﻿apswweb  
 **#vinícius**  
    
-*últimas modificações:*  
+*últimas modificações:*
+'script-header-html.js' foi adicionado. Nele está o código HTML para o header das páginas e pode ser reutilizado.
+'index.html', 'index-2.html' e 'index calculadora.html' foram atualizados para refletir essa mudança.
+
+*modificações prévias:*
 'index-4.html' agora é 'index calculadora.html' e inclui a estrutura para a calculadora de imc  
 style.css agora é usado como o estilo css padrão em todas as páginas  
 style.css foi atualizado para incluir a calculadora  
