@@ -14,4 +14,4 @@ Após o login, fazer com que o botão "Entrar" se torne o nome do usuário, ou a
 Restringir o acesso ao cálculo de imc apenas para um usuário logado.  
 Adicionar mais informações / conteúdo nas páginas correspondentes a "Início" e "Sobre".  
 Melorar a aparência do CSS da calculadora de imc.  
-O código html do header é reutilizado em todos os arquivos .html. Deve existir uma forma de criar o código apenas uma vez em um só arquivo e reutilizá-lo em todas as páginas, mas não sei como fazer isso.   
+~O código html do header é reutilizado em todos os arquivos .html. Deve existir uma forma de criar o código apenas uma vez em um só arquivo e reutilizá-lo em todas as páginas, mas não sei como fazer isso.~   
