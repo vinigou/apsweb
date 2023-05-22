@@ -1,11 +1,16 @@
 ﻿apswweb  
 **#vinícius**  
    
-*últimas modificações:*
+*últimas modificações:*   
+nomes das páginas foram atualizadas   
+login ocorre na pagina inicial 'index.html', nas outras páginas há um botão "Sair" que leva o usuário de uma página de volta à primeira.   
+script para o login foi adicionado como 'script-login.js'   
+arquivos usados foram renomeados e não usados foram deletados
+   
+*modificações prévias:*   
 'script-header-html.js' foi adicionado. Nele está o código HTML para o header das páginas e pode ser reutilizado.
 'index.html', 'index-2.html' e 'index calculadora.html' foram atualizados para refletir essa mudança.
 
-*modificações prévias:*
 'index-4.html' agora é 'index calculadora.html' e inclui a estrutura para a calculadora de imc  
 style.css agora é usado como o estilo css padrão em todas as páginas  
 style.css foi atualizado para incluir a calculadora  
