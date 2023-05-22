@@ -10,13 +10,13 @@ class Header extends HTMLElement {
         </div>
         <div class="nav-list">
             <ul>
-                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
-                <li class="nav-item"><a href="https://www.programasaudefacil.com.br/calculadora-de-imc" class="nav-link">IMC</a></li>
-                <li class="nav-item"><a href="index-3.html" class="nav-link"> Sobre</a></li>
+                <li class="nav-item"><a href="index-inicio.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="index-imc.html" class="nav-link">IMC</a></li>
+                <li class="nav-item"><a href="index-sobre.html" class="nav-link"> Sobre</a></li>
             </ul>
         </div>
-        <div class="login-button">
-            <button><a href="index-2.html">Entrar</a></button>
+        <div id="Sair" class="login-button">
+            <button><a href="index.html">Sair</a></button>
         </div>
 
         <div class="mobile-menu-icon">
@@ -25,16 +25,17 @@ class Header extends HTMLElement {
     </nav>
     <div class="mobile-menu">
         <ul>
-            <li class="nav-item"><a href="index-2.html" class="nav-link">Início</a></li>
-            <li class="nav-item"><a href="https://www.programasaudefacil.com.br/calculadora-de-imc" class="nav-link">IMC</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+            <li class="nav-item"><a href="index-inicio.html" class="nav-link">Início</a></li>
+            <li class="nav-item"><a href="index-imc.html" class="nav-link">IMC</a></li>
+            <li class="nav-item"><a href="index-sobre.html" class="nav-link">Sobre</a></li>
         </ul>
 
-        <div class="login-button">
-            <button><a href="#">Entrar</a></button>
+        <div id="Sair" class="login-button">
+            <button><a href="index.html">Sair</a></button>
         </div>
     </div>
 </header>
+<br>
       `;
     }
   }
