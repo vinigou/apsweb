@@ -5,9 +5,25 @@
     font-family: 'Inter', sans-serif;
 }
 
+body{
+    text-align: center;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    width: 100%;
+    height: 100vh;
+    background: url('../img/fuji.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
 header {
     background-color: #483d8b;
-    box-shadow: 0px 3px 10px #464646;
+    height: 140px;
+    box-shadow: 0 3px 10px #818183e3;
 }
 
 .nav-bar {
@@ -19,13 +35,16 @@ header {
 .logo {
     display: flex;
     align-items: center;
+    margin-top: -23px;
 }
 
 .logo h1 {
     color: #def0f5;
+    font-size: 4em;
 }
 
 .nav-list {
+
     display: flex;
     align-items: center;
 }
@@ -37,28 +56,56 @@ header {
 }
 
 .nav-item {
-    margin: 0 15px;
+    margin: 0 80px;
 }
 
 .nav-link {
     text-decoration: none;
-    font-size: 1.15rem;
+    font-size: 2rem;
     color: #def0f5;
-    font-weight: 400;
 }
 
 .login-button button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -8%;
+    width: 5em;
+    height: 3em;
+    border-radius: 30em;
+    color: #fff;
+    background: #483d8b;
+    font-size: 40px;
+    font-family: inherit;
     border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #def0f5;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    
 }
 
-.login-button button a {
-    text-decoration: none;
-    color: #483d8b;
-    font-weight: 500;
-    font-size: 1.1rem;
+.login-button button::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #6d5cda 10%, #b69ef0 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.login-button button:hover::before {
+    width: 100%;
+}
+
+.login-button button a:visited{
+    color: #fff;
+
 }
 
 .mobile-menu-icon {
@@ -73,44 +120,53 @@ header {
     .nav-bar {
         padding: 1.5rem 4rem;
     }
+
     .nav-item {
         display: none;
     }
+
     .login-button {
         display: none;
     }
+
     .mobile-menu-icon {
         display: block;
     }
+
     .mobile-menu-icon button {
         background-color: transparent;
         border: none;
         cursor: pointer;
     }
+
     .mobile-menu ul {
         display: flex;
         flex-direction: column;
         text-align: center;
         padding-bottom: 1rem;
     }
+
     .mobile-menu .nav-item {
         display: block;
         padding-top: 1.2rem;
     }
+
     .mobile-menu .login-button {
         display: block;
         padding: 1rem 2rem;
     }
+
     .mobile-menu .login-button button {
         width: 100%;
     }
+
     .open {
         display: block;
     }
 }
 
 .input-field input::-webkit-outer-spin-button,
-.input-field input::-webkit-outer-spin-button{
+.input-field input::-webkit-outer-spin-button {
     appearance: none;
 }
 
@@ -118,14 +174,217 @@ header {
     display: none;
 }
 
-body {
-    text-align: center;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    background-color: #def0f5;
-}
+
 
 form {
     display: inline;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    width: 100%;
+}
+
+
+
+section {
+    position: relative;
+    width: 500px;
+    height: 700px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 2555, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-inicio {
+    margin-top: 40px;
+    color:#fff;
+    font-size: 5em;
+}
+
+h1{
+    color: #fff;
+    font-size: 5em;
+}
+
+section h1 {
+    color: #fff;
+    font-size: 3em;
+}
+
+h2 {
+    margin-top: 10%;
+    margin-left: 4%;
+    font-size: 5rem;
+    color: #fff;
+    text-align: center;
+}
+
+h3{
+    margin-top: 5% ;
+    color: #fff;
+    font-size: 5em;
+}
+
+.index-inicio-p{
+    font-size: 3em;
+    color: #fff;
+}
+
+.index-sobre{
+    color: #fff;
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+}
+
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    width: 500px;
+    border-bottom: 2px solid #ffffff;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fdfdfd;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+    
+}
+
+input:focus~label,
+input:valid~label {
+    top: -5px;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    margin-top: -30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 15px;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+a{ 
+    color: #fff;
+    text-decoration: none !important;
+}
+
+#link{
+    color: rgb(255, 4, 255);
+}
+
+.calculadora-index{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 100vh;
+        width: 100%;
+    
+}
+
+.calculadora-section {
+    position: relative;
+    width: 500px;
+    height: 520px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 2555, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-field  {
+    position: relative;
+    margin: 50px 0;
+    width: 490px;
+    border-bottom: 2px solid #fff;
+}
+
+.input-field label {
+    position: absolute;
+    left: 6px;
+    transform: translateY(-50%);
+    color: #eeeeee;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -5px;
+}
+
+.input-field input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+.div-sobre {
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.bem-vindo {
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+#infos{
+    margin-top: 15%;
+    font-size: 1.5em;
+    
+    color: #fff;
+    text-shadow: 0px 1px 10px #ffffff8f;
+
 }
