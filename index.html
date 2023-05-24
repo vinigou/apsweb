@@ -1,23 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <!--PÁGINA DE INICIO-->
+<!--PÁGINA INICIAL E LOGIN-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/script-header-html.js" type="text/javascript" defer></script>
+    <script src="assets/js/script-header-html.js" type="text/javascript" defer></script>    
+    <link rel="icon" href="./assets/img/barbell-outline.svg">
     <title>Smart Health</title>
     
 </head>
 
 <body>
-    <main-header></main-header>
 
-    <br><h1>A saúde começa aqui.</h1><br>
-    <p class="index-inicio-p">Para usar a calculadora, clique na aba "IMC."</p><br>
-    <p class="index-inicio-p">Se você quer saber mais sobre o cálculo de Índice de Massa Corporal,</p>
-    <p class="index-inicio-p">clique na aba "Sobre."</p>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Smart Health</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a onclick="alertaEntrar()" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a onclick="alertaEntrar()" class="nav-link">IMC</a></li>
+                    <li class="nav-item"><a onclick="alertaEntrar()" class="nav-link"> Sobre</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button onclick="Entrar()" id="show-login">Entrar</button>
+            </div>  
                 
+        </nav>
+        
+    </header>
+    
+    <br>
+
+    <main>
+        <h2 id="bem-vindo" class="bem-vindo">Seja bem-vindo(a)! Para monitorar seu IMC, basta entrar na sua conta!</h2>
+        <h2 id="necessario-entrar" class="hidden">Entre na sua conta!</h2>          
+        
+        <section id="login-section" class="hidden">
+            <div id="login-box" class="hidden">
+                <br><h1>A saúde começa aqui.</h1><br>
+    
+                <p>Quer se manter atualizado em tempo real sobre a efetividade daquele treino ou daquela dieta em poucos cliques?</p>                
+                <p>Cadastre-se já e use o site!<p>
+            
+                <form id="login-form" method="post">
+                    <div class="inputbox">
+                        <ion-icon name="person-outline"></ion-icon>
+                            <input type="login" required>
+                            <label for="">Login</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" required>
+                            <label for="">Senha</label>
+                    </div>
+                    <button id="enviar">
+                        Entrar
+                    </button>
+                </form>
+                <br>
+                <br>
+                        
+                <br><p>Seu resultado nas suas mãos!<p>    
+            
+            </div>
+            
+        </section>
+    </main>
+
+
+    <script src="assets/js/script-login.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
