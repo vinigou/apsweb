@@ -1,85 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<!--PÁGINA INICIAL E LOGIN-->
+    <!--PÁGINA DE INICIO-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/script-header-html.js" type="text/javascript" defer></script>    
+    <script src="assets/js/script-header-html.js" type="text/javascript" defer></script>
     <title>Smart Health</title>
     
 </head>
 
 <body>
+    <main-header></main-header>
 
-    <header>
-        <nav class="nav-bar">
-            <div class="logo">
-                <h1>Smart Health</h1>
-            </div>
-            <div class="nav-list">
-                <ul>
-                    <li class="nav-item"><a onclick="alertaEntrar()" class="nav-link">Início</a></li>
-                    <li class="nav-item"><a onclick="alertaEntrar()" class="nav-link">IMC</a></li>
-                    <li class="nav-item"><a onclick="alertaEntrar()" class="nav-link"> Sobre</a></li>
-                </ul>
-            </div>
-            <div class="login-button">
-                <button><a onclick="Entrar()">Entrar</a></button>
-            </div>
-    
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
-            </div>
-        </nav>
-        <div class="mobile-menu">
-            <ul>
-                <li class="nav-item"><a onclick="alertaEntrar()" class="nav-link">Início</a></li>
-                <li class="nav-item"><a onclick="alertaEntrar()" class="nav-link">IMC</a></li>
-                <li class="nav-item"><a onclick="alertaEntrar()" class="nav-link">Sobre</a></li>
-            </ul>
-    
-            <div class="login-button">
-                <button><a onclick="Entrar()">Entrar</a></button>
-            </div>
-        </div>
-    </header>
-    
-    <br>
-
-    <main>
-        <h2 id="bem-vindo">Seja bem-vindo(a)! Para usar o site, basta entrar na sua conta!</h2>
-        <h2 id="necessario-entrar" class="hidden">É preciso entrar primeiro!</h2>    
-        
-        <section id="login-section">
-            <div id="login-box" class="hidden">
-                <h1>A saúde começa aqui</h1><br>
-    
-                <p>Quer se manter atualizado em tempo real sobre a efetividade daquele treino ou daquela dieta em poucos cliques??? link abaixo</p>                
-                <p> Cadastre-se para ficar por dentro de todas as novidades <p><br>
-            
-                <form id="login-form" method="post">
-                    <label for="fname">Login:</label><br>
-                    <input type="text" id="fname" name="fname" required><br>
-                    <label for="pword">Senha:</label><br>
-                    <input type="password" id="pword" name="pword" required><br>
-                    <button id="enviar">
-                        Enviar
-                    </button>
-                </form>
-                <br>
-                <br>
-                        
-                <p> seu resultado nas suas mãos<p>    
-            
-            </div>
-            
-        </section>
-    </main>
-
-
-    <script src="assets/js/script-login.js"></script>
+    <br><h1>A saúde começa aqui.</h1><br>
+    <p class="index-inicio-p">Para usar a calculadora, clique na aba "IMC."</p><br>
+    <p class="index-inicio-p">Se você quer saber mais sobre o cálculo de Índice de Massa Corporal,</p>
+    <p class="index-inicio-p">clique na aba "Sobre."</p>
+                
 </body>
-
 </html>
